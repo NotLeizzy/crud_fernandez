@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookStoreController;
 
+Route::get('/', function () {
+    return redirect('/books');
+});
 
 Route::get('/books', [BookStoreController::class, 'index']);
 Route::post('/booksStore', [BookStoreController::class, 'store']);
