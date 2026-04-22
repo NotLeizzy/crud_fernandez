@@ -10,7 +10,7 @@
 <div class="container">
     <h1>Book Information Management System</h1>
 
-    <form action="/booksStore" method="POST" class="books-form">
+    <form action="/books" method="POST" class="books-form">
         @csrf
         <div class="form-group">
             <label for="book_name">Name:</label>
